@@ -1,0 +1,356 @@
+/*
+	Caskaleton CSS Framework
+	Version 0.0.0
+	Updated: Now developing
+
+	Copyright (c) 2017, Miruka.
+	License: MIT
+*/
+html,
+body {
+  font-size: 16px;
+  line-height: 1.25rem;
+}
+
+body {
+  font-family: "Helvetica Neue", "Yu Gothic Medium", YuGothic, Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif;
+  color: #313439;
+  background-color: transparent;
+}
+
+a {
+  color: #3794de;
+}
+
+a:hover {
+  color: #f03c69;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #0d0d0e;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+.h1 {
+  font-size: 2rem;
+}
+
+h2,
+.h2 {
+  font-size: 1.5rem;
+}
+
+h3,
+.h3 {
+  font-size: 1.25rem;
+}
+
+h4,
+.h4 {
+  font-size: 16px;
+}
+
+h5,
+.h5 {
+  font-size: 0.875rem;
+}
+
+h6,
+.h6 {
+  font-size: 0.75rem;
+}
+
+h1 a, .h1 a,
+h2 a, .h2 a,
+h3 a, .h3 a,
+h4 a, .h4 a,
+h5 a, .h5 a,
+h6 a, .h6 a {
+  color: inherit;
+}
+
+p + h2,
+p + h3,
+p + h4,
+p + h5,
+p + h6,
+ul + h2,
+ul + h3,
+ul + h4,
+ul + h5,
+ul + h6,
+ol + h2,
+ol + h3,
+ol + h4,
+ol + h5,
+ol + h6,
+dl + h2,
+dl + h3,
+dl + h4,
+dl + h5,
+dl + h6,
+blockquote + h2,
+blockquote + h3,
+blockquote + h4,
+blockquote + h5,
+blockquote + h6,
+hr + h2,
+hr + h3,
+hr + h4,
+hr + h5,
+hr + h6,
+pre + h2,
+pre + h3,
+pre + h4,
+pre + h5,
+pre + h6,
+table + h2,
+table + h3,
+table + h4,
+table + h5,
+table + h6,
+form + h2,
+form + h3,
+form + h4,
+form + h5,
+form + h6,
+figure + h2,
+figure + h3,
+figure + h4,
+figure + h5,
+figure + h6 {
+  margin-top: 1.25rem;
+}
+
+ul, ul ul, ul ol,
+ol,
+ol ul,
+ol ol {
+  margin: 0 0 0 1.25rem;
+}
+
+ol ol li {
+  list-style-type: lower-alpha;
+}
+
+ol ol ol li {
+  list-style-type: lower-roman;
+}
+
+nav ul, nav ol {
+  margin: 0;
+  list-style: none;
+}
+nav ul ul, nav ul ol, nav ol ul, nav ol ol {
+  margin-left: 1.25rem;
+}
+
+dl dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 1.25rem;
+}
+
+hr {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: -1px;
+}
+
+blockquote {
+  padding-left: 1rem;
+  border-left: 4px solid rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  color: rgba(49, 52, 57, 0.65);
+}
+blockquote p {
+  margin-bottom: .5rem;
+}
+
+time, cite, small, figcaption {
+  font-size: 87.5%;
+}
+
+cite {
+  opacity: .6;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
+  cursor: help;
+}
+
+var {
+  font-size: 16px;
+  opacity: .6;
+  font-style: normal;
+}
+
+mark, code, samp, kbd {
+  position: relative;
+  top: -1px;
+  padding: 4px 4px 2px 4px;
+  display: inline-block;
+  line-height: 1;
+  color: rgba(49, 52, 57, 0.85);
+}
+
+code {
+  background: #e0e1e1;
+}
+
+mark {
+  background: #f7ba45;
+}
+
+samp {
+  color: #fff;
+  background: #1c86f2;
+}
+
+kbd {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+sub,
+sup {
+  font-size: x-small;
+  line-height: 0;
+  margin-left: 1rem/4;
+  position: relative;
+}
+
+sup {
+  top: 0;
+}
+
+sub {
+  bottom: 1px;
+}
+
+pre, code, samp, var, kbd {
+  font-family: "Lusida Console" monospace;
+}
+
+pre, code, samp, var, kbd, mark {
+  font-size: 87.5%;
+}
+
+pre,
+pre code {
+  background: #f8f8f8;
+  padding: 0;
+  top: 0;
+  display: block;
+  line-height: 1.25rem;
+  color: rgba(49, 52, 57, 0.85);
+  overflow: none;
+  white-space: pre-wrap;
+}
+
+pre {
+  padding: 1rem;
+}
+
+figcaption {
+  opacity: .6;
+}
+
+figure figcaption {
+  position: relative;
+  top: -1rem/2;
+}
+
+figure pre {
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+ul.unstyled {
+  margin-left: 0;
+}
+ul.unstyled, ul.unstyled ul {
+  list-style: none;
+}
+
+.monospace {
+  font-family: "Lusida Console" monospace;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.strong {
+  font-weight: bold !important;
+}
+
+.normal {
+  font-weight: normal !important;
+}
+
+.muted {
+  opacity: .55;
+}
+
+a.muted {
+  color: #0d0d0e;
+}
+
+a.muted:hover {
+  opacity: 1;
+}
+
+.black {
+  color: #0d0d0e;
+}
+
+.smaller {
+  font-size: 0.75rem;
+}
+
+.small {
+  font-size: 0.875rem;
+}
+
+.big {
+  font-size: 1.25rem;
+}
+
+.large {
+  font-size: 1.5rem;
+}
+
+.end {
+  margin-bottom: 0 !important;
+}
+
+.nowrap,
+.nowrap td {
+  white-space: nowrap;
+}

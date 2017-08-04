@@ -1,0 +1,106 @@
+// BREAKPOINTS
+// ---------------------------------------------------------------------------
+$breakpoint-sm: 768px !default;
+$breakpoint-md: 1024px !default;
+$breakpoint-lg: 1200px !default;
+
+
+// COLORS
+// ---------------------------------------------------------------------------
+
+// Brand
+$color-primary: #1c86f2 !default;
+$color-secondary: #f7ba45 !default;
+
+// States
+$color-error: #f03c69 !default;
+$color-success: #35beb1 !default;
+$color-warning: #f7ba45 !default;
+$color-focus: #1c86f2 !default;
+
+// Grayscale
+$color-black: #0d0d0e !default;
+$color-darkgray: #313439 !default;
+$color-midgray: #676b72 !default;
+$color-gray: #bdbdbd !default;
+$color-lightgray: #d4d4d4 !default;
+$color-silver: #e0e1e1 !default;
+$color-aluminum: #f8f8f8 !default;
+$color-white: #fff !default;
+
+// Background
+$color-bg: $color-aluminum !default;
+$color-bg-dark: $color-darkgray !default;
+
+// Text
+$color-text: $color-darkgray !default;
+$color-text-light: $color-aluminum !default;
+$color-headings: $color-black !default;
+$color-headings-light: $color-aluminum !default;
+
+// Links
+$color-link: #3794de !default;
+$color-link-hover: #f03c69 !default;
+
+
+// TEXT
+// ---------------------------------------------------------------------------
+
+// Font Size
+$font-size: 16px !default;
+$font-size-xs: 0.75rem !default;
+$font-size-sm: 0.875rem !default;
+$font-size-lg: 1.25rem !default;
+$font-size-xl: 1.5rem !default;
+$font-size-xxl: 2rem !default;
+$font-size-jumbo: 3rem !default;
+
+$font-size-h1: $font-size-xxl !default;
+$font-size-h2: $font-size-xl !default;
+$font-size-h3: $font-size-lg !default;
+$font-size-h4: $font-size !default;
+$font-size-h5: $font-size-sm !default;
+$font-size-h6: $font-size-xs !default;
+
+// Line Height
+$line-height: 1.25rem !default;
+
+// Font Family
+$font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-ja: "Helvetica Neue", "Yu Gothic Medium", YuGothic, Hiragino Kaku Gothic ProN, Arial, Meiryo, sans-serif !default;
+$font-family-monospace: "Lusida Console" monospace !default;
+
+
+// WIDTH
+// ---------------------------------------------------------------------------
+$width-xs: 20rem !default;
+$width-sm: 30rem !default;
+$width-md: 40rem !default;
+$width-lg: 50rem !default;
+$width-xl: 60rem !default;
+
+
+// Z-INDEX
+// ---------------------------------------------------------------------------
+$z-over-content: 100 !default;
+$z-over-control: 200 !default;
+$z-over-page: 300 !default;
+$z-over-screen: 400 !default;
+$z-over-all: 500 !default;
+
+// SPACE
+// ---------------------------------------------------------------------------
+$space-none: 0 !default;
+$space-xs: 0.125rem !default;
+$space-xs: 0.25rem !default;
+$space-sm: 0.5rem !default;
+$space-md: 1rem !default;
+$space-lg: 2rem !default;
+$space-xl: 4rem !default;
+$space-xxl: 8rem !default;
+
+
+// GRID
+// ---------------------------------------------------------------------------
+$grid-columns: 12 !default;
+$grid-gutter: 1rem !default;
