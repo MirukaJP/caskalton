@@ -1,0 +1,25 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  padding: 0 1rem;
+}
+
+p {
+  padding: 0 1rem;
+}
+
+.sample-view {
+  padding: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  margin: 1rem;
+}
+.sample-view > :last-child {
+  margin-bottom: 0;
+}
+.sample-view h1, .sample-view h2, .sample-view h3, .sample-view h4, .sample-view h5, .sample-view h6,
+.sample-view .h1, .sample-view .h2, .sample-view .h3, .sample-view .h4, .sample-view .h5, .sample-view .h6 {
+  padding: 0;
+}
+.sample-view p {
+  padding: 0;
+}

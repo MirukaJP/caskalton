@@ -6,10 +6,15 @@
 	Copyright (c) 2017, Miruka.
 	License: MIT
 */
+img {
+  width: 100%;
+  height: auto;
+}
+
 html,
 body {
   font-size: 16px;
-  line-height: 1.25rem;
+  line-height: 1.5em;
 }
 
 body {
@@ -27,39 +32,81 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
   color: #0d0d0e;
+  font-weight: bold;
+  line-height: 1.5em;
   text-rendering: optimizeLegibility;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
-h1,
-.h1 {
+h1, .h1 {
   font-size: 2rem;
 }
-
-h2,
-.h2 {
-  font-size: 1.5rem;
+h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6,
+h1 + .h2, h1 + .h3, h1 + .h4, h1 + .h5, h1 + .h6, .h1 + h2, .h1 + h3, .h1 + h4, .h1 + h5, .h1 + h6,
+.h1 + .h2, .h1 + .h3, .h1 + .h4, .h1 + .h5, .h1 + .h6 {
+  margin-top: 0;
 }
-
-h3,
-.h3 {
+h1 .subtitle, .h1 .subtitle {
   font-size: 1.25rem;
 }
 
-h4,
-.h4 {
+h2, .h2 {
+  font-size: 1.5rem;
+}
+h2 + h3, h2 + h4, h2 + h5, h2 + h6,
+h2 + .h3, h2 + .h4, h2 + .h5, h2 + .h6, .h2 + h3, .h2 + h4, .h2 + h5, .h2 + h6,
+.h2 + .h3, .h2 + .h4, .h2 + .h5, .h2 + .h6 {
+  margin-top: 0;
+}
+h2 .subtitle, .h2 .subtitle {
   font-size: 16px;
 }
 
-h5,
-.h5 {
+h3, .h3 {
+  font-size: 1.25rem;
+}
+h3 + h4, h3 + h5, h3 + h6,
+h3 + .h4, h3 + .h5, h3 + .h6, .h3 + h4, .h3 + h5, .h3 + h6,
+.h3 + .h4, .h3 + .h5, .h3 + .h6 {
+  margin-top: 0;
+}
+h3 .subtitle, .h3 .subtitle {
   font-size: 0.875rem;
 }
 
-h6,
-.h6 {
+h4, .h4 {
+  font-size: 16px;
+}
+h4 + h5, h4 + h6,
+h4 + .h5, h4 + .h6, .h4 + h5, .h4 + h6,
+.h4 + .h5, .h4 + .h6 {
+  margin-top: 0;
+}
+h4 .subtitle, .h4 .subtitle {
+  font-size: 0.875rem;
+}
+
+h5, .h5 {
+  font-size: 0.875rem;
+}
+h5 + h6, h5 + .h6, .h5 + h6, .h5 + .h6 {
+  margin-top: 0;
+}
+h5 .subtitle, .h5 .subtitle {
   font-size: 0.75rem;
+}
+
+h6, .h6 {
+  font-size: 0.75rem;
+}
+h6 .subtitle, .h6 .subtitle {
+  font-size: 0.75rem;
+}
+
+section h1:first-child, section .h1:first-child {
+  margin-top: 0;
 }
 
 h1 a, .h1 a,
@@ -69,6 +116,14 @@ h4 a, .h4 a,
 h5 a, .h5 a,
 h6 a, .h6 a {
   color: inherit;
+}
+
+.subtitle {
+  opacity: .5;
+}
+
+p {
+  font-size: 16px;
 }
 
 p + h2,
@@ -121,14 +176,14 @@ figure + h3,
 figure + h4,
 figure + h5,
 figure + h6 {
-  margin-top: 1.25rem;
+  margin-top: 1.5em;
 }
 
 ul, ul ul, ul ol,
 ol,
 ol ul,
 ol ol {
-  margin: 0 0 0 1.25rem;
+  margin: 0 0 0 1.5em;
 }
 
 ol ol li {
@@ -144,7 +199,7 @@ nav ul, nav ol {
   list-style: none;
 }
 nav ul ul, nav ul ol, nav ol ul, nav ol ol {
-  margin-left: 1.25rem;
+  margin-left: 1.5em;
 }
 
 dl dt {
@@ -152,7 +207,12 @@ dl dt {
 }
 
 dd {
-  margin-left: 1.25rem;
+  margin-left: 1.5em;
+}
+
+p, blockquote, hr, pre, ol, ul, dl,
+table, fieldset, figure, address, form {
+  margin-bottom: 1rem;
 }
 
 hr {
@@ -172,7 +232,7 @@ blockquote p {
 }
 
 time, cite, small, figcaption {
-  font-size: 87.5%;
+  font-size: 0.875rem;
 }
 
 cite {
@@ -182,6 +242,7 @@ cite {
 abbr[title], dfn[title] {
   border-bottom: 1px dotted rgba(0, 0, 0, 0.5);
   cursor: help;
+  font-size: inherit;
 }
 
 var {
@@ -218,7 +279,7 @@ kbd {
 
 sub,
 sup {
-  font-size: x-small;
+  font-size: 0.75rem;
   line-height: 0;
   margin-left: 1rem/4;
   position: relative;
@@ -246,7 +307,7 @@ pre code {
   padding: 0;
   top: 0;
   display: block;
-  line-height: 1.25rem;
+  line-height: 1.5em;
   color: rgba(49, 52, 57, 0.85);
   overflow: none;
   white-space: pre-wrap;

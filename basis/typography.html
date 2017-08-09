@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Typography - Caskaleton</title>
     
+    <link rel="stylesheet" href="../css/ress.min.css">
     <link rel="stylesheet" href="../css/caskaleton.css">
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <h1>Caskaleton</h1>
+            <h1><a href="../index.html">Caskaleton</a></h1>
 <!--
             <nav>
                <ul>
@@ -22,17 +24,131 @@
     </header>
     
     <div class="contents">
-        <h1>Typography</h1>
+        <h1>Typography <span class="subtitle">文字</span></h1>
         <p class="desc">Developing</p>
         
         <h2>Headings</h2>
         <section>
-            <h1>Heading 1 見出し</h1>
-            <h2>Heading 2</h2>
-            <h3>Heading 3</h3>
-            <h4>Heading 4</h4>
-            <h5>Heading 5</h5>
-            <h6>Heading 6</h6>
+            <div class="sample-view">
+                <h1>Heading 1 <span class="subtitle">見出し１</span></h1>
+                <h2>Heading 2 <span class="subtitle">見出し２</span></h2>
+                <h3>Heading 3 <span class="subtitle">見出し３</span></h3>
+                <h4>Heading 4 <span class="subtitle">見出し４</span></h4>
+                <h5>Heading 5 <span class="subtitle">見出し５</span></h5>
+                <h6>Heading 6 <span class="subtitle">見出し６</span></h6>
+            </div>
+        </section>
+        
+        <h2>Paragraph　段落</h2>
+        <section>
+            <div class="sample-view">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo rem quidem ut, voluptate veniam at, tempora ipsa blanditiis nihil laborum culpa ullam alias a provident corporis. Dolorum quae, eius et.
+                </p>
+                <p>
+                    吾輩は猫である。名前はまだ無い。<br>
+                    どこで生れたかとんと見当がつかぬ。<br>
+                    何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。
+                </p>
+            </div>
+        </section>
+        
+        <h2>List　リスト</h2>
+        <section>
+            <h3>Unordered</h3>
+            <div class="sample-view">
+                <ul>
+                    <li>List Item 1</li>
+                    <li>
+                        List Item 2
+                        <ul>
+                            <li>List Item 2-1</li>
+                            <li>
+                                List Item 2-2
+                                <ul>
+                                    <li>List Item 2-2-1</li>
+                                    <li>List Item 2-2-2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                </ul>
+            </div>
+            <h3>Ordered</h3>
+            <div class="sample-view">
+                <ol>
+                    <li>List Item 1</li>
+                    <li>
+                        List Item 2
+                        <ol>
+                            <li>List Item 2-1</li>
+                            <li>
+                                List Item 2-2
+                                <ol>
+                                    <li>List Item 2-2-1</li>
+                                    <li>List Item 2-2-2</li>
+                                </ol>
+                            </li>
+                        </ul>
+                    </ol>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                </ol>
+            </div>
+        </section>
+        
+        <h2>Quotes　引用</h2>
+        <section>
+            <div class="sample-view">
+                <blockquote>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea optio accusantium, consequatur architecto atque soluta hic cumque repellat excepturi libero doloribus expedita eos sunt mollitia. Cumque, soluta maxime illum. Eum?</p>
+                    <cite>Source</cite>
+                </blockquote>
+                <blockquote>
+                    <p>
+                       吾輩は猫である。名前はまだ無い。<br>
+                        どこで生れたかとんと見当がつかぬ。<br>
+                        何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。</p>
+                    <cite>「吾輩は猫である」著・夏目漱石</cite>
+                </blockquote>
+            </div>
+        </section>
+        
+        <h2>Inline Elements</h2>
+        <section>
+            <div class="sample-view">
+                <b>Bold</b>
+                <i>Italic</i>
+                <strong>Strong</strong>
+                <em>Emphasis</em>
+                <del>Deleted</del>
+                <ins>Inserted</ins>
+                <small>Small</small>
+                <cite>Cite</cite>
+                <abbr title="Abbreviation">Abbr</abbr>
+                <code>Code</code>
+                </pre>
+                <var>Variable</var>
+                <kbd>Enter</kbd>
+                <samp>Sample</samp>
+                <mark>Mark</mark>
+                X<sup>sup</sup>
+                X<sub>sub</Xsub>
+            </div>
+        </section>
+        
+        <h2>Figure</h2>
+        <section>
+            <div class="sample-view">
+                <figure>
+                    <img src="../images/image.jpg">
+                    <figcaption>Balance Rocks At Liver</figcaption>
+                </figure>
+            </div>
         </section>
     </div>
     

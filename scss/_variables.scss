@@ -63,7 +63,7 @@ $font-size-h5: $font-size-sm !default;
 $font-size-h6: $font-size-xs !default;
 
 // Line Height
-$line-height: 1.25rem !default;
+$line-height: 1.5em !default;
 
 // Font Family
 $font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif !default;
@@ -98,6 +98,12 @@ $space-md: 1rem !default;
 $space-lg: 2rem !default;
 $space-xl: 4rem !default;
 $space-xxl: 8rem !default;
+
+$margin: $space-md !default;
+$margin-sm: $space-xs !default;
+$margin-lg: $space-lg !default;
+
+$padding: $space-md !default;
 
 
 // GRID

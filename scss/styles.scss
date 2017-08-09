@@ -1,0 +1,29 @@
+@import "_variables";
+
+// Caskaleton Site Styles
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    padding: 0 $padding;
+}
+p {
+    padding: 0 $padding;
+}
+.sample-view {
+    padding: $padding;
+    border: 1px solid rgba(0,0,0,.2);
+    background-color: #fff;
+    // position
+    margin: $margin;
+    
+    > :last-child {
+        margin-bottom: 0;
+    }
+    
+    h1, h2, h3, h4, h5, h6,
+    .h1, .h2, .h3, .h4, .h5, .h6 {
+        padding: 0;
+    }
+    p {
+        padding: 0;
+    }
+}
