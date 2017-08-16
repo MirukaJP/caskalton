@@ -1,0 +1,276 @@
+// Container
+.container {
+	max-width: $breakpoint-md;
+	margin: auto auto;
+}
+.one-column {
+	max-width: $breakpoint-sm;
+	margin: auto auto;
+}
+
+// Float 
+.float-right {
+	float: right;
+}
+.float-left {
+	float: left;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+// Grid Layout
+.grid {
+	display: -ms-grid;
+	display: grid;
+	&.gap {
+		-ms-grid-gap: $margin;
+		grid-gap: $margin;
+	}
+}
+.grid-12 {
+	-ms-grid-template-columns: repeat(12, 1fr);
+	grid-template-columns: repeat(12, 1fr);
+}
+.col-1 {}
+.col-2 {
+	-ms-grid-column: span 2;
+	grid-column: span 2;
+}
+.col-3 {
+	-ms-grid-column: span 3;
+	grid-column: span 3;
+}
+.col-4 {
+	-ms-grid-column: span 4;
+	grid-column: span 4;
+}
+.col-5 {
+	-ms-grid-column: span 5;
+	grid-column: span 5;
+}
+.col-6 {
+	-ms-grid-column: span 6;
+	grid-column: span 6;
+}
+.col-7 {
+	-ms-grid-column: span 7;
+	grid-column: span 7;
+}
+.col-8 {
+	-ms-grid-column: span 8;
+	grid-column: span 8;
+}
+.col-9 {
+	-ms-grid-column: span 9;
+	grid-column: span 9;
+}
+.col-10 {
+	-ms-grid-column: span 10;
+	grid-column: span 10;
+}
+.col-11 {
+	-ms-grid-column: span 11;
+	grid-column: span 11;
+}
+.col-12 {
+	-ms-grid-column: span 12;
+	grid-column: span 12;
+}
+.offset-1 {
+	-ms-grid-column-start: 2;
+	grid-column-start: 2;
+	-ms-grid-column-end: 13;
+	grid-column-end: 13;
+}
+.offset-2 {
+	-ms-grid-column-start: 3;
+	grid-column-start: 3;
+	-ms-grid-column-end: 13;
+	grid-column-end: 13;
+}
+.offset-3 {
+	-ms-grid-column-start: 4;
+	grid-column-start: 4;
+	-ms-grid-column-end: 13;
+	grid-column-end: 13;
+}
+.offset-4 {
+	-ms-grid-column-start: 5;
+	grid-column-start: 5;
+	-ms-grid-column-end: 13;
+	grid-column-end: 13;
+}
+.offset-5 {
+	-ms-grid-column-start: 6;
+	grid-column-start: 6;
+	-ms-grid-column-end: 13;
+	grid-column-end: 13;
+}
+.offset-6 {
+	-ms-grid-column-start: 7;
+	grid-column-start: 7;
+	-ms-grid-column-end: 13;
+	grid-column-end: 13;
+}
+.grid-2columns {
+	-ms-grid-template-columns: 1fr 3fr;
+	grid-template-columns: 1fr 3fr;
+	-ms-grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr auto;
+	-ms-grid-template-areas: "header header" "sidebar contents" "footer footer";
+	grid-template-areas: "header header" "sidebar contents" "footer footer";
+	
+	> header, > .header {
+		-ms-grid-area: header;
+		grid-area: header;
+	}
+	> .sidebar {
+		-ms-grid-area: sidebar;
+		grid-area: sidebar;
+	}
+	> .contents {
+		-ms-grid-area: contents;
+		grid-area: contents;
+	}
+	> footer, > .footer {
+		-ms-grid-area: footer;
+		grid-area: footer;
+	}
+}
+.grid-2columns-reverse {
+	-ms-grid-template-columns: 3fr 1fr;
+	grid-template-columns: 3fr 1fr;
+	-ms-grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr auto;
+	-ms-grid-template-areas: "header header" "contents sidebar" "footer footer";
+	grid-template-areas: "header header" "contents sidebar" "footer footer";
+	
+	> header, > .header {
+		-ms-grid-area: header;
+		grid-area: header;
+	}
+	> .sidebar {
+		-ms-grid-area: sidebar;
+		grid-area: sidebar;
+	}
+	> .contents {
+		-ms-grid-area: contents;
+		grid-area: contents;
+	}
+	> footer, > .footer {
+		-ms-grid-area: footer;
+		grid-area: footer;
+	}
+}
+.grid-3columns {
+	-ms-grid-template-columns: 1fr 3fr 1fr;
+	grid-template-columns: 1fr 3fr 1fr;
+	-ms-grid-template-rows: auto 1fr auto;
+	grid-template-rows: auto 1fr auto;
+	-ms-grid-template-areas: "header header header" "leftbar contents rightbar" "footer footer footer";
+	grid-template-areas: "header header header" "leftbar contents rightbar" "footer footer footer";
+	
+	> header, > .header {
+		-ms-grid-area: header;
+		grid-area: header;
+	}
+	> .leftbar {
+		-ms-grid-area: leftbar;
+		grid-area: leftbar;
+	}
+	> .rightbar {
+		-ms-grid-area: rightbar;
+		grid-area: rightbar;
+	}
+	> .contents {
+		-ms-grid-area: contents;
+		grid-area: contents;
+	}
+	> footer, > .footer {
+		-ms-grid-area: footer;
+		grid-area: footer;
+	}
+}
+
+@media (max-width: $breakpoint-sm) {
+	.grid.responsive {
+		display: block;
+	}
+}
+
+// Order
+.order-1 {
+	order: 1;
+}
+.order-2 {
+	order: 2;
+}
+.order-3 {
+	order: 3;
+}
+.order-4 {
+	order: 4;
+}
+.order-5 {
+	order: 5;
+}
+.order-6 {
+	order: 6;
+}
+.order-7 {
+	order: 7;
+}
+.order-8 {
+	order: 8;
+}
+.order-9 {
+	order: 9;
+}
+.order-10 {
+	order: 10;
+}
+
+// Flexbox
+.flex {
+	display: flex;
+	&.gap {
+		> * {
+			margin-right: $margin;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+.flex-stretch {
+	> * {
+		flex: 1 1 20%;
+	}
+}
+
+// Margin & Padding
+.block-center {
+	margin: auto auto;
+}
+.block-left {
+	margin: auto auto auto 0;
+}
+.block-right {
+	margin: auto 0 auto auto;
+}
+.margin-bottom {
+	margin-bottom: $margin;
+}
+.end, margin-bottom-none {
+	margin-bottom: 0;
+}
+
+// Width
+.w60 {
+	width: 60%;
+}

@@ -1,0 +1,214 @@
+// Default
+.btn {
+    display: inline-block;
+	padding: $padding/2 1.5em;
+	border: 1px solid $color-border;
+	background-color: $color-palegray;
+	color: $color-link;
+	text-decoration: none;
+	// Transition
+	transition: all 0.5s ease;
+	
+	&:hover {
+		color: $color-link-hover;
+		background-color: darken($color-palegray, 5%);
+	}
+	
+	&.default {
+		background-color: $color-default;
+		color: #fff;
+		&:hover {
+			background-color: darken($color-default, 20%);
+		}
+	}
+	&.positive {
+		background-color: $color-positive;
+		color: #fff;
+		&:hover {
+			background-color: darken($color-positive, 15%);
+		}
+	}
+	&.negative {
+		background-color: $color-negative;
+		color: #fff;
+		&:hover {
+			background-color: darken($color-negative, 10%);
+		}
+	}
+	&.error {
+		background-color: $color-error;
+		color: #fff;
+		&:hover {
+			background-color: darken($color-error, 20%);
+		}
+	}
+	&.warning {
+		background-color: $color-warning;
+		color: $color-black;
+		&:hover {
+			background-color: darken($color-warning, 10%);
+		}
+	}
+	&.success {
+		background-color: $color-success;
+		color: #fff;
+		&:hover {
+			background-color: darken($color-success, 10%);
+		}
+	}
+	&.focus {
+		background-color: $color-focus;
+		color: #fff;
+		&:hover {
+			background-color: darken($color-focus, 10%);
+		}
+	}
+}
+
+// Sizing
+.btn {
+	&.xs {
+		padding: 0 1.5em;
+		font-size: $font-size-xs;
+		> i {
+			font-size: 1.5em;
+			margin: 3px 0;
+		}
+	}
+	&.sm {
+		padding: $space-sm/2 1.5em;
+		font-size: $font-size-sm;
+		> i {
+			font-size: 1.5em;
+			margin: 1px 0;
+		}
+	}
+	&.lg {
+		padding: $space-lg/2 1.5em;
+		font-size: $font-size-lg;
+		> i {
+			font-size: 1.5em;
+			margin: -4px 0;
+		}
+	}
+	&.xl {
+		padding: $space-xl/2 1.5em;
+		font-size: $font-size-xxl;
+		> i {
+			font-size: 1.5em;
+			margin: -12px 0;
+		}
+	}
+}
+// Round
+.btn.round {
+	border-radius: 44px;
+}
+
+// Outline
+.btn.outline {
+	background-color: transparent;
+	border: 2px solid $color-palegray;
+	&:hover {
+		border-color: $color-link-hover;
+		background-color: rgba($color-lightgray, .5);
+	}
+	&.default {
+		border-color: $color-default;
+		color: $color-default;
+		&:hover {
+			border-color: darken($color-default, 20%);
+			background-color: rgba($color-default, .5);
+			color: darken($color-default, 20%);
+		}
+	}
+	&.positive {
+		border-color: $color-positive;
+		color: $color-positive;
+		&:hover {
+			border-color: darken($color-positive, 20%);
+			background-color: rgba($color-positive, .5);
+			color: darken($color-positive, 20%);
+		}
+	}
+	&.negative {
+		border-color: $color-negative;
+		color: $color-negative;
+		&:hover {
+			border-color: darken($color-negative, 20%);
+			background-color: rgba($color-negative, .5);
+			color: darken($color-negative, 20%);
+		}
+	}
+	&.error {
+		border-color: $color-error;
+		color: $color-error;
+		&:hover {
+			border-color: darken($color-error, 20%);
+			background-color: rgba($color-error, .5);
+			color: darken($color-error, 20%);
+		}
+	}
+	&.warning {
+		border-color: $color-warning;
+		color: $color-warning;
+		&:hover {
+			border-color: darken($color-warning, 20%);
+			background-color: rgba($color-warning, .5);
+			color: darken($color-warning, 20%);
+		}
+	}
+	&.success {
+		border-color: $color-success;
+		color: $color-success;
+		&:hover {
+			border-color: darken($color-success, 20%);
+			background-color: rgba($color-success, .5);
+			color: darken($color-success, 20%);
+		}
+	}
+	&.focus {
+		border-color: $color-focus;
+		color: $color-focus;
+		&:hover {
+			border-color: darken($color-focus, 20%);
+			background-color: rgba($color-focus, .5);
+			color: darken($color-focus, 20%);
+		}
+	}
+}
+
+// Icons in button
+.btn > i {
+	vertical-align: top;
+}
+.with-icon {
+	display: flex;
+	align-items: center;
+	> i {
+		flex: 0 0 auto;
+		margin-right: $space-xs;
+	}
+	> span {
+		flex: 1 1 auto;
+	}
+}
+.btn.shorten {
+	padding: $padding/2;
+	&.xs {
+		padding: 0 $space-xs;
+	}
+	&.sm {
+		padding: $space-sm/2;
+	}
+	&.lg {
+		padding: $space-lg/2;
+	}
+	&.xl {
+		padding: $space-xl/2;
+	}
+}
+.btn.block {
+	display: block;
+	margin-bottom: $margin;
+}

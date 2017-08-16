@@ -9,38 +9,43 @@ $breakpoint-lg: 1200px !default;
 // ---------------------------------------------------------------------------
 
 // Brand
-$color-primary: #1c86f2 !default;
-$color-secondary: #f7ba45 !default;
+$color-primary: #263238 !default;
+$color-secondary: #78909C !default;
 
 // States
-$color-error: #f03c69 !default;
-$color-success: #35beb1 !default;
-$color-warning: #f7ba45 !default;
-$color-focus: #1c86f2 !default;
+$color-error: #F44336 !default;
+$color-success: #00C853 !default;
+$color-warning: #FFC107 !default;
+$color-focus: #00B0FF !default;
+$color-default: $color-primary;
+$color-positive: #2962FF;
+$color-negative: #676b72;
 
 // Grayscale
 $color-black: #0d0d0e !default;
 $color-darkgray: #313439 !default;
 $color-midgray: #676b72 !default;
-$color-gray: #bdbdbd !default;
-$color-lightgray: #d4d4d4 !default;
-$color-silver: #e0e1e1 !default;
-$color-aluminum: #f8f8f8 !default;
+$color-gray: #9299a3 !default;
+$color-lightgray: #c0cad8 !default;
+$color-palegray: #f8f8f8 !default;
 $color-white: #fff !default;
 
 // Background
-$color-bg: $color-aluminum !default;
+$color-bg: $color-palegray !default;
 $color-bg-dark: $color-darkgray !default;
 
 // Text
 $color-text: $color-darkgray !default;
-$color-text-light: $color-aluminum !default;
+$color-text-light: $color-lightgray !default;
 $color-headings: $color-black !default;
-$color-headings-light: $color-aluminum !default;
+$color-headings-light: $color-white !default;
 
 // Links
-$color-link: #3794de !default;
-$color-link-hover: #f03c69 !default;
+$color-link: #2196F3 !default;
+$color-link-hover: #0D47A1 !default;
+
+// Border
+$color-border: rgba(49, 52, 57, .15);
 
 
 // TEXT
@@ -90,7 +95,6 @@ $z-over-all: 500 !default;
 
 // SPACE
 // ---------------------------------------------------------------------------
-$space-none: 0 !default;
 $space-xs: 0.125rem !default;
 $space-xs: 0.25rem !default;
 $space-sm: 0.5rem !default;

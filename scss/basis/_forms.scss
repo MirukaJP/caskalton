@@ -1,0 +1,136 @@
+// Form Layouts
+.form-item {
+	margin-bottom: $margin;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.form-vertical {
+	label, input, textarea, select {
+		display: block;
+		width: 100%;
+	}
+}
+.form-horizontal {
+	.form-item {
+		display: -ms-grid;
+		display: grid;
+		-ms-grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(12, 1fr);
+		&.gap {
+			-ms-grid-gap: $margin;
+			grid-gap: $margin;
+		}
+		> label {
+			padding: 0.5rem 0;
+		}
+		> div {
+			
+		}
+		
+	}
+	label, input, textarea, select {
+		display: block;
+		width: 100%;
+	}
+}
+.form-inline {
+	> label, > input, > textarea, > select {
+		display: inline-block;
+		width: auto;
+	}
+}
+@media (max-width: $breakpoint-sm) {
+	.form-horizontal.responsive > .form-item {
+		display: block;
+	}
+}
+
+// Inputs
+input[type="text"], input[type="search"], 
+input[type="email"], input[type="tel"], 
+input[type="password"], input[type="url"] {
+	padding: 0.5rem $padding;
+	min-height: 38px;
+	border: 1px solid $color-border;
+	background-color: #fff;
+	color: $color-text;;
+}
+input[type="number"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="month"],input[type="week"],
+input[type="time"] {
+	padding: 0.5rem 0 0.5rem $padding;
+	min-height: 40px;
+	border: 1px solid $color-border;
+	background-color: #fff;
+}
+input[type="file"] {
+	padding: 5px;
+	min-height: 40px;
+	border: 1px solid $color-border;
+	background-color: #fff;
+	line-height: $line-height;
+}
+
+// select
+select {
+	padding: 0 $padding;
+	min-height: 38px;
+	border-radius: 0;
+	border: 1px solid $color-border;
+	background-color: #fff;
+	color: $color-text;
+	line-height: $line-height*1.5;
+}
+
+// textarea
+textarea {
+	padding: $padding/2 $padding;
+	min-height: 38px;
+	border-radius: 0;
+	border: 1px solid $color-border;
+	background-color: #fff;
+	color: $color-text;
+}
+
+// button
+[type=reset], [type=submit], button, html [type=button] {
+    -webkit-appearance: none;
+}
+button {
+    display: inline-block;
+	padding: $padding/2 1.5em;
+	background-color: $color-palegray;
+	color: $color-link;
+	text-decoration: none;
+	
+	&:hover {
+		color: $color-link-hover;
+		background-color: darken($color-palegray, 5%);
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+// Placeholder
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder {
+	color: rgba($color-text, .3);
+}
+::placeholder, :placeholder-shown {
+	color: rgba($color-text, .3);
+}
+
+// Focus
+input:focus, textarea:focus, select:focus {
+	border-color: $color-positive;
+	outline: none;
+	box-shadow: 0;
+}
+

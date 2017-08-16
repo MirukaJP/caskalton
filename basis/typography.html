@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Typography - Caskaleton</title>
     
-    <link rel="stylesheet" href="../css/ress.min.css">
     <link rel="stylesheet" href="../css/caskaleton.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
@@ -24,24 +23,27 @@
     </header>
     
     <div class="contents">
-        <h1>Typography <span class="subtitle">文字</span></h1>
+        <h1>Typography</h1>
         <p class="desc">Developing</p>
         
         <h2>Headings</h2>
         <section>
-            <div class="sample-view">
-                <h1>Heading 1 <span class="subtitle">見出し１</span></h1>
-                <h2>Heading 2 <span class="subtitle">見出し２</span></h2>
-                <h3>Heading 3 <span class="subtitle">見出し３</span></h3>
-                <h4>Heading 4 <span class="subtitle">見出し４</span></h4>
-                <h5>Heading 5 <span class="subtitle">見出し５</span></h5>
-                <h6>Heading 6 <span class="subtitle">見出し６</span></h6>
+            <div class="demo-view">
+                <h1>Heading 1 <span class="subtitle">Subtitle</span></h1>
+                <h2>Heading 2 <span class="subtitle">Subtitle</span></h2>
+                <h3>Heading 3 <span class="subtitle">Subtitle</span></h3>
+                <h4>Heading 4 <span class="subtitle">Subtitle</span></h4>
+                <h5>Heading 5 <span class="subtitle">Subtitle</span></h5>
+                <h6>Heading 6 <span class="subtitle">Subtitle</span></h6>
+            </div>
+            <div class="sample-code">
+                <pre data-category="HTML"><code>&lt;h1&gt;Heading 1 &lt;span class="subtitle"&gt;Subtitle&lt;/span&gt;&lt;/h1&gt;</code></pre>
             </div>
         </section>
         
-        <h2>Paragraph　段落</h2>
+        <h2>Paragraph</span></h2>
         <section>
-            <div class="sample-view">
+            <div class="demo-view">
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo rem quidem ut, voluptate veniam at, tempora ipsa blanditiis nihil laborum culpa ullam alias a provident corporis. Dolorum quae, eius et.
                 </p>
@@ -51,12 +53,15 @@
                     何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて人間というものを見た。
                 </p>
             </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;p&gt;.....&lt;/p&gt;</code></pre>
+            </div>
         </section>
         
-        <h2>List　リスト</h2>
+        <h2>List</h2>
         <section>
             <h3>Unordered</h3>
-            <div class="sample-view">
+            <div class="demo-view">
                 <ul>
                     <li>List Item 1</li>
                     <li>
@@ -77,8 +82,50 @@
                     <li>List Item 5</li>
                 </ul>
             </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;ul&gt;
+	&lt;li&gt;.....&lt;/li&gt;
+	&lt;li&gt;
+		&lt;ul&gt;
+			&lt;li&gt;.....&lt;/li&gt;
+			&lt;li&gt;
+				&lt;ul&gt;.....&lt;/ul&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+           &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            
+            <h4>Unstyled</h4>
+            <div class="demo-view">
+                <ul class="unstyled">
+                    <li>List Item 1</li>
+                    <li>
+                        List Item 2
+                        <ul>
+                            <li>List Item 2-1</li>
+                            <li>
+                                List Item 2-2
+                                <ul>
+                                    <li>List Item 2-2-1</li>
+                                    <li>List Item 2-2-2</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                </ul>
+            </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;ul class="unstyled"&gt;
+	&lt;li&gt;.....&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+            </div>
+            
             <h3>Ordered</h3>
-            <div class="sample-view">
+            <div class="demo-view">
                 <ol>
                     <li>List Item 1</li>
                     <li>
@@ -99,11 +146,24 @@
                     <li>List Item 5</li>
                 </ol>
             </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;ol&gt;
+	&lt;li&gt;.....&lt;/li&gt;
+	&lt;li&gt;
+		&lt;ol&gt;
+			&lt;li&gt;.....&lt;/li&gt;
+			&lt;li&gt;
+				&lt;ol&gt;.....&lt;/ol&gt;
+			&lt;/li&gt;
+		&lt;/ol&gt;
+           &lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+            </div>
         </section>
         
-        <h2>Quotes　引用</h2>
+        <h2>Quotes</h2>
         <section>
-            <div class="sample-view">
+            <div class="demo-view">
                 <blockquote>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea optio accusantium, consequatur architecto atque soluta hic cumque repellat excepturi libero doloribus expedita eos sunt mollitia. Cumque, soluta maxime illum. Eum?</p>
                     <cite>Source</cite>
@@ -116,39 +176,88 @@
                     <cite>「吾輩は猫である」著・夏目漱石</cite>
                 </blockquote>
             </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;blockquote&gt;
+	&lt;p&gt;.....&lt;/p&gt;
+	&lt;cite&gt;.....&lt;/cite&gt;
+&lt;/blockquote&gt;</code></pre>
+            </div>
         </section>
         
         <h2>Inline Elements</h2>
         <section>
-            <div class="sample-view">
-                <b>Bold</b>
-                <i>Italic</i>
-                <strong>Strong</strong>
-                <em>Emphasis</em>
-                <del>Deleted</del>
-                <ins>Inserted</ins>
-                <small>Small</small>
-                <cite>Cite</cite>
-                <abbr title="Abbreviation">Abbr</abbr>
-                <code>Code</code>
-                </pre>
-                <var>Variable</var>
-                <kbd>Enter</kbd>
-                <samp>Sample</samp>
-                <mark>Mark</mark>
-                X<sup>sup</sup>
-                X<sub>sub</Xsub>
+            <div class="demo-view">
+                <p class="columns-3">
+                	<b>Bold</b> ........ <code>&lt;b&gt;</code><br>
+                	<i>Italic</i> ........ <code>&lt;i&gt;</code><br>
+                	<strong>Strong</strong> ........ <code>&lt;strong&gt;</code><br>
+                	<em>Emphasis</em> ........ <code>&lt;em&gt;</code><br>
+                	<del>Deleted</del> ........ <code>&lt;del&gt;</code><br>
+                	<ins>Inserted</ins> ........ <code>&lt;ins&gt;</code><br>
+                	<small>Small</small> ........ <code>&lt;small&gt;</code><br>
+                	<cite>Cite</cite> ........ <code>&lt;cite&gt;</code><br>
+                	<abbr title="Abbreviation">Abbr</abbr> ........ <code>&lt;abbr&gt;</code><br>
+                	<code>Code</code> ........ <code>&lt;code&gt;</code><br>
+                	<var>Variable</var> ........ <code>&lt;var&gt;</code><br>
+                	<kbd>Enter</kbd> ........ <code>&lt;kbd&gt;</code><br>
+                	<samp>Sample</samp> ........ <code>&lt;samp&gt;</code><br>
+                	<mark>Mark</mark> ........ <code>&lt;mark&gt;</code><br>
+                	X<sup>sup</sup> ........ <code>&lt;sup&gt;</code><br>
+                	X<sub>sub</sub> ........ <code>&lt;sub&gt;</code>
+                </p>
             </div>
         </section>
         
         <h2>Figure</h2>
         <section>
-            <div class="sample-view">
+            <div class="demo-view">
                 <figure>
                     <img src="../images/image.jpg">
                     <figcaption>Balance Rocks At Liver</figcaption>
                 </figure>
             </div>
+        </section>
+        
+        <h2>Columns</h2>
+        <section>
+        	<p>We can use <code>.columns-2</code>~<code>.columns-4</code>. But mobile is always one column.</p>
+            <div class="demo-view">
+                <p class="columns-3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error ab perferendis veritatis vel saepe eos ipsam quaerat fugiat fugit illum, itaque adipisci similique dolorem molestiae. Dolor excepturi aliquam laudantium voluptate.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit similique, fugit ea quibusdam vero laboriosam hic minima ad illo, repellendus, quaerat, corporis placeat laudantium deleniti culpa tempore architecto rerum dicta.
+                </p>
+            </div>
+        </section>
+        <h2>Utilites <span class="subtitle">for Typography</span></h2>
+        <section>
+        	<h3>Alignment</h3>
+        	<div class="demo-view">
+        		<p class="text-left">.text-light</p>
+        		<p class="text-center">.text-center</p>
+        		<p class="text-right">.text-right</p>
+        	</div>
+        	<h3>Status</h3>
+        	<div class="demo-view">
+        		<p class="text-error">.text-error</p>
+        		<p class="text-warning">.text-warning</p>
+        		<p class="text-success">.text-success</p>
+        		<p class="text-focus">.text-focus</p>
+        	</div>
+        	<h3>Modifiers</h3>
+        	<p>They are helpful classes.</p>
+        	<div class="demo-view">
+        		<p>
+        			<span class="upper">.upper</span>&nbsp;
+        			<span class="lower">.LOWER</span>&nbsp;
+        			<span class="italic">.italic</span>&nbsp;
+        			<span class="strong">.strong</span>&nbsp;
+					<span class="normal">.normal</span><br>
+					<span class="text-xs">.text-xs</span>&nbsp;
+					<span class="text-sm">.text-sm</span>&nbsp;
+					<span class="text-lg">.text-lg</span>&nbsp;
+					<span class="text-xl">.text-xl</span>
+        		</p>
+        	</div>
         </section>
     </div>
     
