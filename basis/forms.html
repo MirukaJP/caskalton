@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Froms - Caskaleton</title>
+    
+    <link rel="stylesheet" href="../css/caskaleton.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><a href="../index.html">Caskaleton</a></h1>
+<!--
+            <nav>
+               <ul>
+                   <li><a href="">menu</a></li>
+               </ul>
+            </nav>
+-->
+        </div>
+    </header>
+    
+    <div class="contents">
+        <h1>Forms</h1>
+        <p class="desc">Developing</p>
+        
+        <h2>Form Layouts</h2>
+        <section>
+        	<h3>Default <span class="subtitle">Inline</span></h3>
+        	<div class="demo-view">
+        		<form>
+        			<div class="form-item">
+        				<label>Kyeword:</label>
+        				<input type="text">
+        				<button type="button" class="btn default">Search</button>
+        			</div>
+        			<div class="form-item">
+        				<label>Birthday:</label>
+        				<input type="text" size="4" placeholder="1997">&nbsp;/&nbsp;<input type="text" size="2" placeholder="11">&nbsp;/&nbsp;<input type="text" size="2" placeholder="30">
+        			</div>
+        		</form>
+        	</div>
+        	
+        	<h3>Vertical</h3>
+        	<div class="demo-view">
+        		<form class="form-vertical">
+        			<div class="form-item">
+        				<label>Name:</label>
+        				<input type="text" placeholder="Your name">
+        			</div>
+        			<div class="form-item">
+        				<label>E-mail:</label>
+        				<input type="text" placeholder="sample@email.com">
+        			</div>
+        			<div class="form-item">
+        				<label>Message:</label>
+        				<textarea></textarea>
+        			</div>
+        			<div class="form-item">
+        				<label>Birthday:</label>
+        				<div class="form-inline">
+							<input type="text" size="4" placeholder="1997">&nbsp;/&nbsp;<input type="text" size="2" placeholder="11">&nbsp;/&nbsp;<input type="text" size="2" placeholder="30">&nbsp;
+        				</div>
+        			</div>
+        			<div class="form-item">
+        				<button type="button" class="btn positive">Send</button>
+        				<button type="reset" class="btn negative">Reset</button>
+        			</div>
+        		</form>
+        	</div>
+        	
+        	<h3>Horizontal</h3>
+        	<div class="demo-view">
+        		<form class="form-horizontal">
+        			<div class="form-item">
+        				<label class="col-4">Name:</label>
+        				<div class="col-8">
+        					<input type="text" placeholder="Your name">
+        				</div>
+        			</div>
+        			<div class="form-item">
+        				<label class="col-4">E-mail:</label>
+        				<div class="col-8">
+        					<input type="text" placeholder="sample@email.com">
+        				</div>
+        			</div>
+        			<div class="form-item">
+        				<label class="col-4">Message:</label>
+        				<div class="col-8">
+        					<textarea></textarea>
+        				</div>
+        			</div>
+        			<div class="form-item">
+        				<label class="col-4">Birthday:</label>
+        				<div class="col-8 form-inline">
+							<input type="text" size="4" placeholder="1997">&nbsp;/&nbsp;<input type="text" size="2" placeholder="11">&nbsp;/&nbsp;<input type="text" size="2" placeholder="30">
+        				</div>
+        			</div>
+        			<div class="form-item">
+        				<div class="offset-4">
+        					<button type="button" class="btn positive">Send</button>
+        					<button type="reset" class="btn negative">Reset</button>
+        				</div>
+        			</div>
+        		</form>
+        	</div>
+        	
+        </section>
+        
+        <h2>Inputs</h2>
+        <section>
+            <h3>Various Text</h3>
+            <div class="demo-view">
+                <input type="text" placeholder="Text">
+                <input type="password" placeholder="Password">
+                <input type="search" placeholder="Keywords here...">
+                <input type="email" placeholder="sample@email.com">
+                <input type="tel" placeholder="123-456-7890">
+                <input type="url" placeholder="http://www.sample.com/">
+                <input type="number" placeholder="999">
+            </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;div class="grid grid-12 gap"&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            
+            <h3>Checkbox and Radio</h3>
+            <div class="demo-view">
+                <label><input type="checkbox"> Checkbox</label>
+                <label><input type="radio"> Radio</label>
+            </div>
+            
+            <h3>Date and Time</h3>
+            <div class="demo-view">
+                <input type="date" placeholder="Date">
+                <input type="datetime" placeholder="Date & Time">
+                <input type="month" placeholder="Month">
+                <input type="week" placeholder="Week">
+                <input type="time" placeholder="Time">
+                <input type="datetime-local" placeholder="datetime-local">
+            </div>
+            
+            <h3>Other</h3>
+            <div class="demo-view">
+                <input type="range">
+                <input type="color">
+                <input type="file">
+            </div>
+        </section>
+        
+        <h2>Text Area</h2>
+        
+        <h2>Select</h2>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+<!--
+            <nav>
+               <ul>
+                   <li><a href="">menu</a></li>
+               </ul>
+            </nav>
+-->
+            <p class="copyright">&copy; Miruka 2017. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

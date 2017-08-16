@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Layouts - Caskaleton</title>
+    
+    <link rel="stylesheet" href="../css/caskaleton.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1><a href="../index.html">Caskaleton</a></h1>
+<!--
+            <nav>
+               <ul>
+                   <li><a href="">menu</a></li>
+               </ul>
+            </nav>
+-->
+        </div>
+    </header>
+    
+    <div class="contents">
+        <h1>Layouts</h1>
+        <p class="desc">Developing</p>
+        
+        <h2>Grid System <span class="subtitle">12 Grids</span></h2>
+        <p>This layout consists of <code>display:grid</code>.</p>
+        <section>
+            <div class="demo-view">
+                <div class="grid grid-12 gap">
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	<div class="">1</div>
+                	
+                	<div class="col-2">2</div>
+                	<div class="col-2">2</div>
+                	<div class="col-2">2</div>
+                	<div class="col-2">2</div>
+                	<div class="col-2">2</div>
+                	<div class="col-2">2</div>
+                	
+                	<div class="col-3">3</div>
+                	<div class="col-3">3</div>
+                	<div class="col-3">3</div>
+                	<div class="col-3">3</div>
+                	
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	
+                	<div class="col-6">6</div>
+                	<div class="col-6">6</div>
+                	
+                	<div class="col-12">12</div>
+                	
+                	<div class="col-5">5</div>
+                	<div class="col-7">7</div>
+                	
+                	<div class="col-8">8</div>
+                	<div class="col-4">4</div>
+                	
+                	<div class="col-9">9</div>
+                	<div class="col-3">3</div>
+                	
+                	<div class="col-10">10</div>
+                	<div class="col-2">2</div>
+                </div>
+            </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;div class="grid grid-12 gap"&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            
+            <h3>None gap</h3>
+            <p>If you need no gaps, you'll markup without <code>.gap</code>.</p>
+            <div class="demo-view">
+            	<div class="grid grid-12">
+            		<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+            	</div>
+            </div>
+            <div class="sample-code">
+            	<pre data-category="HTML"><code>&lt;div class="grid grid-12"&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+	&lt;div class-"col-4"&gt;.....&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+            
+            <h3>Nested</h3>
+            <div class="demo-view">
+            	<div class="grid grid-12 gap">
+            		<div class="col-4">4</div>
+            		<div class="col-8 grid grid-12">
+						<div class="col-4">4</div>
+						<div class="col-4">4</div>
+						<div class="col-4">4</div>
+            		</div>
+            	</div>
+            </div>
+            <h3>Responsive</h3>
+            <p>The grids arrenged vertically at mobile devises.</p>
+            <div class="demo-view">
+            	<div class="grid grid-12 gap responsive">
+            		<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+                	<div class="col-4">4</div>
+            	</div>
+            </div>
+        </section>
+        
+        <h2>Grid Templates</h2>
+        <section>
+        	<h3>Two Columns Site</h3>
+        	<div class="demo-view">
+        		<div class="grid grid-2columns gap">
+        			<header>Header</header>
+        			<div class="sidebar">Sidebar</div>
+        			<div class="contents">Contents</div>
+        			<footer>Footer</footer>
+        		</div>
+        	</div>
+        	<h4>Reverse</h4>
+        	<div class="demo-view">
+        		<div class="grid grid-2columns-reverse gap">
+        			<header>Header</header>
+        			<div class="sidebar">Sidebar</div>
+        			<div class="contents">Contents</div>
+        			<footer>Footer</footer>
+        		</div>
+        	</div>
+        	<h3>Three Columns Site</h3>
+        	<div class="demo-view">
+        		<div class="grid grid-3columns gap">
+        			<header>Header</header>
+        			<div class="leftbar">Left</div>
+        			<div class="contents">Contents</div>
+        			<div class="rightbar">Right</div>
+        			<footer>Footer</footer>
+        		</div>
+        	</div>
+        </section>
+        
+        <h2>Flexbox</h2>
+        <section>
+        	<h3>Default</h3>
+        	<div class="demo-view">
+        		<div class="flex margin-bottom">
+        			<div class="demo-block">One</div>
+        			<div class="demo-block">Two</div>
+        			<div class="demo-block">Three</div>
+        		</div>
+        		<div class="flex gap">
+        			<div class="demo-block">One</div>
+        			<div class="demo-block">Two</div>
+        			<div class="demo-block">Three</div>
+        		</div>
+        	</div>
+        	<h3>Stretch</h3>
+        	<div class="demo-view">
+        		<div class="flex flex-stretch margin-bottom">
+        			<div class="demo-block">One</div>
+        			<div class="demo-block">Two</div>
+        			<div class="demo-block">Three</div>
+        		</div>
+        		<div class="flex flex-stretch gap">
+        			<div class="demo-block">One</div>
+        			<div class="demo-block">Two</div>
+        			<div class="demo-block">Three</div>
+        		</div>
+        	</div>
+        </section>
+        
+        <h2>Utilities <span class="subtitle">for Layouts</span></h2>
+        <section>
+            <h3>Container</h3>
+            <div class="demo-view">
+                <div class="container demo">
+                	Maximum width is 1024px.
+                </div>
+            </div>
+            <h3>One Column</h3>
+            <div class="demo-view">
+                <div class="one-column demo">
+                	<p>Maximum width is 768px.</p>
+                	<p class="text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.  <br>Ipsam assumenda laudantium distinctio magni impedit fugiat exercitationem autem laboriosam sequi similique alias fugit eos aut et repellendus, maxime libero, aperiam. Sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa consectetur sequi accusamus omnis veniam nulla laboriosam sint ipsam porro, impedit, repellendus adipisci! Optio error dolorum fuga provident, necessitatibus veritatis qui.</p>
+                </div>
+            </div>
+            <h3>Float</h3>
+            <div class="demo-view">
+				<div class="demo-block clearfix text-center">
+					.clearfix
+					<div class="float-right demo">.float-right</div>
+					<div class="float-left demo">
+						.float-left
+					</div>
+				</div>
+            </div>
+            <h3>Block Alignment</h3>
+            <div class="demo-view">
+            	<div class="demo-block block-center w60 margin-bottom">.block-center</div>
+            	<div class="demo-block block-left w60 margin-bottom">.block-left</div>
+            	<div class="demo-block block-right w60">.block-right</div>
+            </div>
+        </section>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+<!--
+            <nav>
+               <ul>
+                   <li><a href="">menu</a></li>
+               </ul>
+            </nav>
+-->
+            <p class="copyright">&copy; Miruka 2017. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
